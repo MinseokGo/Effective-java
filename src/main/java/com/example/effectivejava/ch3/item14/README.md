@@ -7,7 +7,7 @@ compareTo 메서드는 해당 객체가 주어진 객체보다 작으면 음의 
 * x.compareTo(y) == 0 이면, 오름차순 기준으로 x 는 y 보다 앞순서에 위치한다. (내림차순일 경우 반대이다.)
 * x.compareTo(y) > 0 이면, 오름차순 기준으로 x 는 y 보다 뒷순서에 위치한다.
 
-** x.compareTo(y) == 0 이면, x.equals(y) 는 true 이어야 한다. **
+**x.compareTo(y) == 0 이면, x.equals(y) 는 true 이어야 한다.**
 
 ## compreTo()의 규약
 * 일관성 : 동일한 두 객체는 항상 같아야 한다.
