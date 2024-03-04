@@ -8,6 +8,7 @@ public class StaticFactoryMethodConvention {
 
     private StaticFactoryMethodConvention(final Character... alphabets) {
         this.alphabets = Arrays.asList(alphabets);
+        System.out.println("Create static factory method convention!!");
     }
 
     // 매개변수가 하나일 때

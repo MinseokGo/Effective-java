@@ -6,6 +6,7 @@ package com.example.effectivejava.ch2.Item1;
 public class StaticFactoryMethod {
     // 기본 생성자로 인스턴스 할당 받는 법
     public StaticFactoryMethod() {
+        System.out.println("Create static factory method!!");
     }
 
     // 정적 팩터리 메서드로 인스턴스 할당 받는 법
