@@ -9,7 +9,7 @@ public class StaticFactoryMethod {
     }
 
     // 정적 팩터리 메서드로 인스턴스 할당 받는 법
-    public StaticFactoryMethod getInstance() {
+    public static StaticFactoryMethod getInstance() {
         return new StaticFactoryMethod();
     }
 }
