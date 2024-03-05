@@ -14,5 +14,16 @@ public class PizzaMain {
                 .addTopping(ham)
                 .addTopping(ham)
                 .build();
+
+        final boolean sauceInside = false;
+        CalzonePizza calzonePizza = new CalzonePizza.Builder()
+                .addTopping(ham)
+                .addTopping(ham)
+                .sauceInside()
+                .sauceInside()
+                .sauceInside()
+                .addTopping(ham)
+                .sauceInside()
+                .build();
     }
 }
