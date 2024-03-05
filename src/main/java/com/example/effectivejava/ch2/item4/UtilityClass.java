@@ -1,5 +1,8 @@
 package com.example.effectivejava.ch2.item4;
 
+/*
+* item4 : 인스턴스화를 막으려거든 private 생성자를 사용하라
+*/
 public class UtilityClass {
     // 기본 생성자가 만들어지는 것을 막는다
     // 상속도 불가능하다
