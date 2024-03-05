@@ -1,4 +1,4 @@
-package com.example.effectivejava.ch2.Item2;
+package com.example.effectivejava.ch2.Item2.nutrition;
 
 public class NutritionFactsJavaBeansPattern {
     private int servingSize = -1;

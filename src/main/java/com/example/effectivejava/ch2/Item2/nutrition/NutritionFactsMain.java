@@ -1,4 +1,4 @@
-package com.example.effectivejava.ch2.Item2;
+package com.example.effectivejava.ch2.Item2.nutrition;
 
 public class NutritionFactsMain {
     public static void main(String[] args) {

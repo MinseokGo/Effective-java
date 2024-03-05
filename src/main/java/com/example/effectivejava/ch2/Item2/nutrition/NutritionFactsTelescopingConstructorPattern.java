@@ -1,4 +1,4 @@
-package com.example.effectivejava.ch2.Item2;
+package com.example.effectivejava.ch2.Item2.nutrition;
 
 /*
  * 점층적 생성자 패턴
