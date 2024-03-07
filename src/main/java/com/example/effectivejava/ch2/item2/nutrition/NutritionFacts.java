@@ -1,4 +1,4 @@
-package com.example.effectivejava.ch2.Item2.nutrition;
+package com.example.effectivejava.ch2.item2.nutrition;
 
 /*
 * item2 : 생성자에 매개변수가 많다면 빌더를 고려하라

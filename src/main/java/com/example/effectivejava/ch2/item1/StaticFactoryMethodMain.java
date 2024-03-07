@@ -1,4 +1,4 @@
-package com.example.effectivejava.ch2.Item1;
+package com.example.effectivejava.ch2.item1;
 
 public class StaticFactoryMethodMain {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.example.effectivejava.ch2.Item2.pizza;
+package com.example.effectivejava.ch2.item2.pizza;
 
 import java.util.EnumSet;
 import java.util.Objects;

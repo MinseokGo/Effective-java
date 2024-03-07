@@ -1,4 +1,4 @@
-package com.example.effectivejava.ch2.Item2.pizza;
+package com.example.effectivejava.ch2.item2.pizza;
 
 public class CalzonePizza extends Pizza {
     private final boolean sauceInside;

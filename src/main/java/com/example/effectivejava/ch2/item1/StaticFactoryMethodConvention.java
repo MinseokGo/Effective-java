@@ -1,4 +1,4 @@
-package com.example.effectivejava.ch2.Item1;
+package com.example.effectivejava.ch2.item1;
 
 import java.util.Arrays;
 import java.util.List;
