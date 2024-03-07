@@ -15,4 +15,8 @@ public enum EnumSingleton {
     public void enumSingletonMethod() {
         System.out.println("Enum Singleton!!");
     }
+
+    public static void main(String[] args) {
+        EnumSingleton.INSTANCE.enumSingletonMethod();
+    }
 }
