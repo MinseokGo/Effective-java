@@ -3,6 +3,9 @@ package com.example.effectivejava.ch2.item7;
 import java.util.Arrays;
 import java.util.EmptyStackException;
 
+/*
+* item7 : 다 쓴 객체 참조를 해제하라
+*/
 public class Stack {
     private static final int DEFAULT_INITIAL_CAPACITY = 16;
 
