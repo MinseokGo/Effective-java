@@ -1,5 +1,6 @@
 package com.example.effectivejava.ch2.item8;
 
+import java.io.BufferedReader;
 import java.lang.ref.Cleaner;
 
 /*
