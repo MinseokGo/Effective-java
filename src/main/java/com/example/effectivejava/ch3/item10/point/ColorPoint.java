@@ -4,6 +4,7 @@ import java.awt.Color;
 
 public class ColorPoint extends Point {
     private final Color color;
+
     public ColorPoint(final int x, final int y, final Color color) {
         super(x, y);
         this.color = color;
