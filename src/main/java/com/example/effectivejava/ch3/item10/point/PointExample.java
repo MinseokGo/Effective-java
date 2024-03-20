@@ -17,5 +17,12 @@ public class PointExample {
         // p는 cp와 cp2와 대칭을 이루지만
         // cp는 cp2와 추이성을 이루지 못함
         System.out.println(cp.equals(cp2));
+
+        // 무한 재귀 위험
+        SmellPoint sp = new SmellPoint(1, 2, Smell.WEAK);
+        // ColorPoint.equals 는 SmellPoint.equals 를
+        // SmellPoint.equals 는 ColorPoint.equals 를 호출 하기 때문에 재귀에 빠짐
+        // StackOverflowError!!
+        //System.out.println(cp.equals(sp));
     }
 }
