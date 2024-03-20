@@ -2,19 +2,20 @@ package com.example.effectivejava.ch3.item10;
 
 public final class PhoneNumber {
     private static final short MIN_VALUE = 0;
+    private static final short MAX_VALUE = 999;
 
     private final short areaCode;
     private final short prefix;
     private final short lineNumber;
 
     public PhoneNumber(final short areaCode, final short prefix, final short lineNumber) {
-        this.areaCode = rangeCheck(areaCode, 999, "지역 코드");
-        this.prefix = rangeCheck(prefix, 999, "프리픽스");
-        this.lineNumber = rangeCheck(lineNumber, 999, "가입자 번호");
+        this.areaCode = rangeCheck(areaCode, "지역 코드");
+        this.prefix = rangeCheck(prefix, "프리픽스");
+        this.lineNumber = rangeCheck(lineNumber, "가입자 번호");
     }
 
-    private static short rangeCheck(final int value, final int max, final String argument) {
-        if (value < MIN_VALUE || value > max) {
+    private static short rangeCheck(final int value, final String argument) {
+        if (value < MIN_VALUE || value > MAX_VALUE) {
             throw new IllegalArgumentException(argument + ": " + value);
         }
         return (short) value;
