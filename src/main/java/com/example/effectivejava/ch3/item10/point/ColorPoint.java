@@ -2,12 +2,17 @@ package com.example.effectivejava.ch3.item10.point;
 
 import java.awt.Color;
 
-public class ColorPoint extends Point {
+public class ColorPoint {
+    private final Point point;
     private final Color color;
 
     public ColorPoint(final int x, final int y, final Color color) {
-        super(x, y);
+        point = new Point(x, y);
         this.color = color;
+    }
+
+    public Point asPoint() {
+        return point;
     }
 
     @Override

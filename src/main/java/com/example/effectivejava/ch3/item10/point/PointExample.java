@@ -24,5 +24,8 @@ public class PointExample {
         // SmellPoint.equals 는 ColorPoint.equals 를 호출 하기 때문에 재귀에 빠짐
         // StackOverflowError!!
         //System.out.println(cp.equals(sp));
+
+        CounterPoint counterPoint = new CounterPoint(0, 1);
+        System.out.println(Point.onUnitCircle(counterPoint.asPoint()));
     }
 }
