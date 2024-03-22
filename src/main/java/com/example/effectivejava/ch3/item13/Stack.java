@@ -3,7 +3,7 @@ package com.example.effectivejava.ch3.item13;
 import java.util.Arrays;
 import java.util.EmptyStackException;
 
-public class Stack {
+public class Stack implements Cloneable {
     private static final int DEFAULT_INITIAL_CAPACITY = 16;
 
     private Object[] elements;
