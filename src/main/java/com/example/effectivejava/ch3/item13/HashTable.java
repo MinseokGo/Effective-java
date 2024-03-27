@@ -1,7 +1,5 @@
 package com.example.effectivejava.ch3.item13;
 
-import java.util.Map.Entry;
-
 public class HashTable implements Cloneable {
     private Entry[] buckets;
 
@@ -14,6 +12,17 @@ public class HashTable implements Cloneable {
             this.key = key;
             this.value = value;
             this.next = next;
+        }
+    }
+
+    @Override
+    public HashTable clone() {
+        try {
+            HashTable result = (HashTable) super.clone();
+            result.buckets = buckets.clone();
+            return result;
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
         }
     }
 }
