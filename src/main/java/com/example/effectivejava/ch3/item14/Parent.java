@@ -9,6 +9,10 @@ public class Parent implements Comparable<Parent> {
         this.name = name;
     }
 
+    public int getId() {
+        return id;
+    }
+
     @Override
     public int compareTo(Parent other) {
         return Integer.compare(id, other.id);
