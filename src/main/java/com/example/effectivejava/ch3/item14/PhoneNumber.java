@@ -1,8 +1,17 @@
 package com.example.effectivejava.ch3.item14;
 
+import static java.util.Comparator.comparingInt;
+
+import java.util.Comparator;
+
 public final class PhoneNumber implements Cloneable, Comparable<PhoneNumber> {
     private static final short MIN_VALUE = 0;
     private static final short MAX_VALUE = 999;
+
+    private static final Comparator<PhoneNumber> COMPARATOR =
+            comparingInt((PhoneNumber phoneNumber) -> phoneNumber.areaCode)
+                    .thenComparing(phoneNumber -> phoneNumber.prefix)
+                    .thenComparing(phoneNumber -> phoneNumber.lineNumber);
 
     private final short areaCode;
     private final short prefix;
@@ -68,13 +77,6 @@ public final class PhoneNumber implements Cloneable, Comparable<PhoneNumber> {
 
     @Override
     public int compareTo(PhoneNumber other) {
-        int result = Short.compare(areaCode, other.areaCode);
-        if (result == 0) {
-            result = Short.compare(prefix, other.prefix);
-            if (result == 0) {
-                result = Short.compare(lineNumber, other.lineNumber);
-            }
-        }
-        return result;
+        return COMPARATOR.compare(this, other);
     }
 }
