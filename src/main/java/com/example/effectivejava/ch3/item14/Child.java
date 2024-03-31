@@ -14,12 +14,24 @@ public class Child implements Comparable<Child> {
     }
 
     @Override
-    public int compareTo(Child child) {
-        final int result = Integer.compare(parent.getId(), child.parent.getId());
+    public boolean equals(Object object) {
+        if (object == this) {
+            return true;
+        }
+        if (!(object instanceof Child other)) {
+            return false;
+        }
+        return parent.compareTo(other.parent) == 0 &&
+                order == other.order;
+    }
+
+    @Override
+    public int compareTo(Child other) {
+        final int result = Integer.compare(parent.getId(), other.parent.getId());
         if (result != 0) {
             return result;
         }
 
-        return Integer.compare(order, child.order);
+        return Integer.compare(order, other.order);
     }
 }
