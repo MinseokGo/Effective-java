@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.effectivejava.phonenumber.PhoneNumberTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-03-22T12:11:26" hostname="MinseokGo-MacBook-Pro.local" time="0.026">
+  <properties/>
+  <testcase name="동치성을 가진 두 객체는 같다." classname="com.example.effectivejava.phonenumber.PhoneNumberTest" time="0.025"/>
+  <testcase name="동치성을 갖지 못한 두 객체는 다르다." classname="com.example.effectivejava.phonenumber.PhoneNumberTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
