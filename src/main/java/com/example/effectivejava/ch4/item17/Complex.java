@@ -6,7 +6,7 @@ public final class Complex {
     private final double realPart;
     private final double imaginaryPart;
 
-    public Complex(double realPart, double imaginaryPart) {
+    private Complex(double realPart, double imaginaryPart) {
         this.realPart = realPart;
         this.imaginaryPart = imaginaryPart;
     }
@@ -44,6 +44,10 @@ public final class Complex {
         return new Complex(
                 (realPart * complex.realPart + imaginaryPart * complex.imaginaryPart) / divide,
                 (imaginaryPart * complex.realPart - realPart * complex.imaginaryPart) / divide);
+    }
+
+    public static Complex valueOf(double realPart, double imaginaryPart) {
+        return new Complex(realPart, imaginaryPart);
     }
     
     @Override

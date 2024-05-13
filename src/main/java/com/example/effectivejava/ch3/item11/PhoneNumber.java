@@ -1,7 +1,5 @@
 package com.example.effectivejava.ch3.item11;
 
-import java.util.Objects;
-
 public final class PhoneNumber {
     private static final short MIN_VALUE = 0;
     private static final short MAX_VALUE = 999;
