@@ -25,3 +25,10 @@ public static final Complex ZERO = new Complex(0, 0);
 public static final Complex ONE  = new Complex(1, 0);
 public static final Complex I    = new Complex(0, 1);
 ```
+단순한 값 객체는 항상 불변으로 만들자!
+
+## 불변으로 만들 수 없는 클래스라도 변경할 수 있는 부분을 최소한으로 줄이자
+* 객체가 가질 수 있는 상태의 수를 줄이면 그 객체를 예측하기 쉬워지고 오류가 생길 가능성이 줄어든다.
+* 그러니 꼭 변경해야 할 필드를 뺀 나머지 모두를 final 로 선언하자.
+* 다른 합당한 이유가 없다면 모든 필드는 private final 이어야 한다.
+* 생성자는 불변식 설정이 모두 완료된, 초기화가 완벽히 끝난 상태의 객체를 생성해야 한다.
